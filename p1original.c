@@ -9,6 +9,12 @@ void add(int a,int b,int c,int d,int *x,int *y)
 {
 *x=(a*d)+(b*c);
 *y=b*d;
+  }
+  int gcd(int x, int y)
+{
+    if (x == 0)
+        return y;
+    return gcd(y % x, x);
 }
 
 void output(int a,int b,int c,int d,int x,int y)
